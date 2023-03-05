@@ -1,0 +1,23 @@
+{
+    "name": "PS Replay Downloader",
+    "version": "0.1.0",
+    "description": "Download PS replays",
+    "permissions": ["storage", "activeTab", "scripting"],
+    "host_permissions": ["*://replay.pokemonshowdown.com/*"],
+    "content_scripts": [
+        {
+            "matches": ["*://replay.pokemonshowdown.com/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "action": {
+        // "default_icon": {
+        //     "16": "assets/ext-icon.png",
+        //     "24": "assets/ext-icon.png",
+        //     "32": "assets/ext-icon.png"
+        // },
+        "default_title": "PS Replay Downloader",
+        "default_popup": "popup.html"
+    },
+    "manifest_version": 3
+}
