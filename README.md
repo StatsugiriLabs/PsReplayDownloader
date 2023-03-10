@@ -1,8 +1,11 @@
 ## PS Replay Downloader
 
-PS Replay Downloader is an open-source Chrome Extension for exporting [Pokémon Showdown replays](https://replay.pokemonshowdown.com/) URLs.
+PS Replay Downloader is an open-source Chrome Extension for
+streamlining batch download and export of [Pokémon Showdown](https://pokemonshowdown.com/) replays URLs.
 
 Extension Download: `<PLACEHOLDER>`
+
+Special thanks to [@cookiesamanda](https://twitter.com/cookiesamanda) for designing the logo.
 
 ### Tutorial
 

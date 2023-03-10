@@ -1,22 +1,29 @@
 <html>
+    <head>
+        <link rel="stylesheet" href="popup.css">
+    </head>
     <body>
-        <h1>PS Replay Downloader</h1>
-        <p>TODO: Add instructions link, some small text under</p>
-        <p></p>
-        Start replay session:
-        <input
-            type="text"
-            maxlength="20"
-            id="usernameField"
-            placeholder="username"
-            required="required"
-        />
-        <input type="checkbox" id="privateCheckbox">Private</input>
-        <button id="startSessionBtn">Search</button>
-        <button id="exportBtn">Export</button>
-        <button id="selectAllBtn">Select All</button>
-        <button id="clearBtn">Clear</button>
+        <header>
+            <h1><img src="images/assets/ps_replay_downloader_48.png"/> PS Replay Downloader</h1>
+        </header>
+        <div class="sessionForm">
+            <div class="replaySearchParams">
+                <input
+                    type="text"
+                    maxlength="20"
+                    id="usernameField"
+                    placeholder="username"
+                    required="required"
+                />
+                <input type="checkbox" id="privateCheckbox"> Private Replays</input>
+            </div>
+            <div class="replaySearchSubmission">
+                <button id="startSessionBtn">Start Session</button>
+            </div>
+        </div>
+        <p class="sourcesMenu"><a href="github.com" target=_blank>FAQ</a> | 
+            <a href="github.com" target=_blank>Source</a></p>
 
-        <script src="popup.js"></script>
+        <script type="module" src="popup.js"></script>
     </body>
 </html>

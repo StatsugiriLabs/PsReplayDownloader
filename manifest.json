@@ -11,11 +11,11 @@
         }
     ],
     "action": {
-        // "default_icon": {
-        //     "16": "assets/ext-icon.png",
-        //     "24": "assets/ext-icon.png",
-        //     "32": "assets/ext-icon.png"
-        // },
+        "default_icon": {
+            "16": "images/assets/ps_replay_downloader_16.png",
+            "48": "images/assets/ps_replay_downloader_48.png",
+            "128": "images/assets/ps_replay_downloader_128.png"
+        },
         "default_title": "PS Replay Downloader",
         "default_popup": "popup.html"
     },
