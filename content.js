@@ -1,6 +1,6 @@
 // Constants
 const CHECKBOX_STYLING =
-    "checkbox; float:right; margin-left: 10px; width: 20px; height: 20px";
+    "checkbox; float:right; margin-left: 10px; width: 20px; height: 20px;";
 const EXPORT_MENU_STYLING =
     "display: block; margin: 2px 0 8px; padding: 3px 7px 6px; border: 1px solid #bcd; background: #f8fbfd; border-radius: 4px; text-decoration: none; color: #369; text-shadow: #fff 0 -1px 0; box-shadow: 1px 1px 1px #d5d5d5; overflow: hidden; white-space: nowrap; text-align: left";
 const TRUE_IDENTIFIER = "1";
@@ -59,15 +59,17 @@ function addExportMenu() {
                     <option value="csv">CSV Download</option>
                 </select>
             </div>
-            <button type="button" style="margin-bottom:10px;" id="exportBtn">Export</button>
+            <button type="button" style="margin-bottom:10px;" id="exportBtn"><b>Export</b></button>
         </div>
     `;
     exportMenu.innerHTML = exportMenuHtml;
     exportMenu.setAttribute("style", EXPORT_MENU_STYLING);
 
+    // Add menu to top of replays
     const replayList = document.querySelector("ul.linklist");
     replayList.prepend(exportMenu);
 
+    // Add select all checkbox
     const replayCheckbox = createCheckbox();
     replayCheckbox.setAttribute("id", "selectAllCheckbox");
     replayList.prepend(replayCheckbox);
@@ -102,6 +104,7 @@ function addCheckboxes() {
                         PS_REPLAY_DOWNLOADER_IDENTIFIER + replayUrl
                     );
                 }
+                // Update UI
                 updateNumReplayDisplay();
             });
             replay.prepend(replayCheckbox);
@@ -181,9 +184,11 @@ async function exportReplays() {
     }
 }
 
-(() => {
+function initReplayMenu() {
     clearReplays();
     addCheckboxes();
     addExportMenu();
     initListeners();
-})();
+}
+
+window.onload = initReplayMenu;

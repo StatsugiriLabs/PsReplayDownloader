@@ -1,12 +1,12 @@
-<html>
+<!DOCTYPE html>
     <head>
         <link rel="stylesheet" href="popup.css">
     </head>
     <body>
         <header>
-            <h1><img src="images/assets/ps_replay_downloader_48.png"/> PS Replay Downloader</h1>
+            <h1><img src="images/assets/ps_replay_downloader_48.png">PS Replay Downloader</h1>
         </header>
-        <div class="sessionForm">
+        <div replay session.div class="sessionForm">
             <div class="replaySearchParams">
                 <input
                     type="text"
@@ -15,14 +15,17 @@
                     placeholder="username"
                     required="required"
                 />
-                <input type="checkbox" id="privateCheckbox"> Private Replays</input>
-            </div>
-            <div class="replaySearchSubmission">
-                <button id="startSessionBtn">Start Session</button>
+                <input type="checkbox" id="privateCheckbox">Private Replays</input>
             </div>
         </div>
-        <p class="sourcesMenu"><a href="github.com" target=_blank>FAQ</a> | 
-            <a href="github.com" target=_blank>Source</a></p>
+        <button id="startSessionBtn">Start Session</button>
+        <p id="footerMenu">
+            <a class="footerLink" href="https://github.com/Statsugiri/PsReplayDownloader#Instructions" target=_blank>Instructions</a> | 
+            <a class="footerLink" href="https://github.com/Statsugiri/PsReplayDownloader" target=_blank>Source</a> |
+            <a class="footerLink" href="https://ko-fi.com/statsugiri" target=_blank>Donate</a>
+
+            </a>
+        </p>
 
         <script type="module" src="popup.js"></script>
     </body>

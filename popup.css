@@ -1,42 +1,67 @@
 body {
-    background-color: #f0f0f0;
-    min-width: 325px;
-}
-
-header {
-    margin-top: 15px;
+    min-width: 285px;
+    padding: 8px;
+    background-color: #fefbef;
 }
 
 img {
-    vertical-align: middle;
+    width: 28px;
+    height: 28px;
+    vertical-align: text-top;
     margin-right: 5px;
 }
 
 h1 {
-    font-size: 25px;
-    font-weight: 500;
-    background-image: linear-gradient(to left, #980000, #ee1515);
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    vertical-align: middle;
+    font-size: 26px;
+    font-weight: 325;
+    margin-top: 0px;
+    color: #403f3c;
+}
+
+#privateCheckbox {
+    font-family: "Open Sans", sans-serif;
 }
 
 input[type="text"] {
-    width: 175px;
+    width: 150px;
+    padding: 4px;
+    border: 0;
+    border-bottom: 2px solid #403f3c;
+    background-color: transparent;
+    font-family: "Open Sans", sans-serif;
 }
 
-#startSessionBtn {
-    margin-top: 8px;
+button {
+    background-color: #ff392f;
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    color: #fefbef;
+    padding: 7px;
+    border: 0;
+    margin-top: 14px;
+    width: 100%;
+    border-radius: 8px;
 }
 
-#startSessionBtn:hover {
-    background-color: red;
+button:hover {
+    background-color: #ff827c;
+    cursor: pointer;
 }
 
-.sourcesMenu {
-    font-size: 11px;
-    display: inline-block;
-    margin-left: 40px;
-    direction: rtl;
+#footerMenu {
+    margin-top: 14px;
+    margin-bottom: 0px;
+}
+
+.footerLink {
+    font-size: 13px;
+    font-family: "Open Sans", sans-serif;
+    color: #2471d5;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footerLink:hover {
+    color: #76a8e8;
 }
