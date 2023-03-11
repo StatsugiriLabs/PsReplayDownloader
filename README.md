@@ -12,10 +12,10 @@ Special thanks to [@cookiesamanda](https://twitter.com/cookiesamanda) for design
 ### Instructions
 
 1. Open the Chrome Extension. Enter the username and toggle whether private replays are desired. Click `Start Session` to open the PS replay search menu.
-   ![Extension UI](./images/readme/readme_1.png)
+   ![Extension UI](./images/readme/readme_1.png | width=100)
 2. Select the replays to download by toggling the checkbox beside the replay. Toggle the checkbox beside the menu to select / deselect all.
-   ![Replay Toggle](./images/readme/readme_2.png)
-   ![Replay Toggle Select All](./images/readme/readme_3.png)
+   ![Replay Toggle](./images/readme/readme_2.png | width=100)
+   ![Replay Toggle Select All](./images/readme/readme_3.png | width=100)
 3. Choose the export format from the dropdown menu. Click export when ready.
 
 ### FAQ
