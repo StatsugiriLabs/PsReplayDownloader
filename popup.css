@@ -33,7 +33,7 @@ input[type="text"] {
 
 button {
     background-color: #ff392f;
-    font-size: 12px;
+    font-size: 13px;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     color: #fefbef;
@@ -55,7 +55,8 @@ button:hover {
 }
 
 .footerLink {
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: 500;
     font-family: "Open Sans", sans-serif;
     color: #2471d5;
     text-decoration: none;

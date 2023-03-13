@@ -151,7 +151,7 @@ async function exportReplays() {
     console.log("Fetching stored replays...");
     var replayList = [];
     const allStorageReplays = await chrome.storage.local.get();
-    for (const [key, val] of Object.entries(allStorageReplays)) {
+    for (const [key, val] of Object.entries(allStorageReplays).reverse()) {
         if (
             key.includes(PS_REPLAY_DOWNLOADER_IDENTIFIER) &&
             val == TRUE_IDENTIFIER
