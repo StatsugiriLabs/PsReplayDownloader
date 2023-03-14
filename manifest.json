@@ -2,7 +2,7 @@
     "name": "PS Replay Downloader",
     "version": "1.0.0",
     "description": "Download batches of Pokémon Showdown replays with ease.",
-    "permissions": ["storage", "activeTab", "scripting"],
+    "permissions": ["storage"],
     "host_permissions": ["*://replay.pokemonshowdown.com/*"],
     "content_scripts": [
         {
