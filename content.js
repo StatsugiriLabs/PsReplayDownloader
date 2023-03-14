@@ -151,7 +151,7 @@ async function exportReplays() {
     console.log("Fetching stored replays...");
     var replayList = [];
     const allStorageReplays = await chrome.storage.local.get();
-    for (const [key, val] of Object.entries(allStorageReplays).reverse()) {
+    for (const [key, val] of Object.entries(allStorageReplays)) {
         if (
             key.includes(PS_REPLAY_DOWNLOADER_IDENTIFIER) &&
             val == TRUE_IDENTIFIER
@@ -160,6 +160,8 @@ async function exportReplays() {
             replayList.push([replayKeyArr[1]]);
         }
     }
+    // Sort replay by reverse-chronological
+    replayList.sort().reverse();
     console.log("Exporting %s replays...", replayList.length);
 
     const exportFormat = document.getElementById("exportFormat");
