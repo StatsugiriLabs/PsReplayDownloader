@@ -3,20 +3,21 @@
 ![PS Replay Downloader](./images/assets/ps_replay_downloader_128.png)
 
 PS Replay Downloader is an open-source Chrome Extension for
-batch downloading [Pokémon Showdown](https://pokemonshowdown.com/) replays. Currently, it supports exporting the following formats:
-
--   Text (newline delimited)
--   CSV (file download)
-
-Extension Download: https://tinyurl.com/PsReplayDownloader
+batch downloading [Pokémon Showdown](https://pokemonshowdown.com/) replays. Currently, it supports text and CSV exports.
 
 Special thanks to [@cookiesamanda](https://twitter.com/cookiesamanda) for designing the logo.
+
+
+## Installation
+You can download the extension at the Chrome Extension store: https://tinyurl.com/PsReplayDownloader
+
+Currently, it is compatible with Chromium-based browsers. There are no plans to migrate to other browsers (eg. Mozilla Firefox).
 
 ## Instructions
 
 1. Open the Chrome Extension. Enter the username and toggle whether private replays are desired. Click `Start Session` to open the PS replay search menu.
 
- <img src="./images/readme/readme_1.png " width=50% height=50%>
+    <img src="./images/readme/readme_1.png " width=50% height=50%>
 
 2. Select the replays to download by toggling the checkbox beside the replay. If the checkboxes do not appear, please refresh the webpage and try again.
 
