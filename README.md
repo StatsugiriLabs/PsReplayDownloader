@@ -19,7 +19,7 @@ Currently, it is compatible with Chromium-based browsers. There are no plans to 
 
     <img src="./images/readme/readme_1.png " width=50% height=50%>
 
-2. Select the replays to download by toggling the checkbox beside the replay. If the checkboxes do not appear, please refresh the webpage and try again.
+2. Select the replays to download by toggling the checkbox beside the replay. *If the checkboxes do not appear, please refresh the webpage or try searching your username again in the extension.*
 
     <img src="./images/readme/readme_2.png " width=50% height=50%>
 
@@ -31,6 +31,9 @@ Currently, it is compatible with Chromium-based browsers. There are no plans to 
 4. If you enjoy the extension, please consider donating to the [Statsugiri Kofi](https://ko-fi.com/statsugiri) to support future work on Pokémon data projects.
 
 ## FAQ
+
+### Why are the checkboxes not showing?
+There may be issues with the extension reloading new pages in the replay search menu. Try refreshing the page or search your username again in the extension pop-up. In particular, navigating from public to private replays has known issues. It's preferred you specify whether you want private replays by toggling the "Private Replays" checkbox before searching.
 
 ### Why not leverage the Pokémon Showdown Web API?
 
