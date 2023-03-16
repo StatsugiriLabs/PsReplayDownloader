@@ -50,7 +50,10 @@ function addExportMenu() {
     const exportMenuHtml = `
         <div class="exportMenu" style="text-align:center;margin:0 auto;width:50%;text-align:left">
             <p style="margin-top:10px;margin-bottom:2px;font-size:80%;font-style:italic;color:#888888">Select from the 50 most recent replays.</p>
-            <p style="margin-top:2px;margin-bottom:4px;font-size:80%;font-style:italic;color:#888888">Check right box to select / deselect all.</p>
+            <p style="margin-top:2px;margin-bottom:2px;font-size:80%;font-style:italic;color:#888888">Check right box to select / deselect all.</p>
+            <p style="margin-top:2px;margin-bottom:2px;font-size:80%;font-style:italic;color:#888888">Do not navigate away from the page</p>
+            <p style="margin-top:2px;margin-bottom:2px;font-size:80%;font-style:italic;color:#888888">as the menu may not load.</p>
+            <p style="margin-top:2px;margin-bottom:4px;font-size:80%;font-style:italic;color:#888888">Start a new search session instead.</p>
             <p style="margin-bottom:10px;"><span id="numReplays">0</span> replays currently selected.</p>        
             <div style="margin-bottom:10px;">
                 <label for="exportFormat">Format:</label>
