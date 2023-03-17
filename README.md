@@ -34,24 +34,20 @@ Currently, it is compatible with Chromium-based browsers. There are no plans to 
 
 ## FAQ
 
-### Why are the checkboxes not showing?
-There may be issues with the extension reloading new pages in the replay search menu. Try refreshing the page or search your username again in the extension pop-up. In particular, navigating from public to private replays has known issues. It's preferred you specify whether you want private replays by toggling the "Private Replays" checkbox before searching.
+### Why are the checkboxes not showing in manual session?
+There may be issues with how Pokémon Showdown loads DOM changes that are incongruent with the extension. Try refreshing the page or search your username again in the extension pop-up. In particular, navigating from public to private replays has known issues. It's preferred you specify whether you want private replays by toggling the "Private Replays" checkbox before searching.
 
-### Why not leverage the Pokémon Showdown Web API?
+### Does the Chrome Extension leverage the Pokémon Showdown Web API?
 
-The aforementioned [API](https://github.com/smogon/pokemon-showdown-client/blob/master/WEB-API.md) is capable of retrieving both public and private replays. I opted to read and modify the webpage directly as I could add the export replay menu directly to the replay search UI instead of creating webpage assets from scratch.
+The aforementioned [API](https://github.com/smogon/pokemon-showdown-client/blob/master/WEB-API.md) is capable of retrieving both public and private replays. I opted for two modes of downloading. The manual session allows users to select replays with more granularity (ie. ignoring undesired replays). The one-click method downloads all replays through the API.
 
-### Why do I have to search for replays through the Chrome Extension first?
-
-Due to how Pokémon Showdown renders its replays after searching, it would take increased engineering effort to have checkboxes populate when the DOM is loaded since the URL does not change. Having the menu to open a new webpage made each "session" feel more isolated in terms of workflow. That being said, I'm open to suggestions on how to render checkboxes on replay search natively.
-
-### Why is it limited to the 50 most recent replays?
+### Why is the manual session limited to the 50 most recent replays?
 
 The replay search UI has a "more results" button where it paginates in increments of 50 replays. As it's impossible to determine how many replays the user has, it requires some recursive function to "click" since the button for each page is rendered one page at at time.
 
 ### Does the Chrome Extension store any data?
 
-It does not. The only data stored are your replay URLs in your browser's local storage, which only you have access to view.
+It does not. The only data stored are your replay URLs in your browser's local storage for the manual session, which only you have access to view.
 
 ## Feature Requests
 
