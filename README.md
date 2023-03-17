@@ -15,20 +15,22 @@ Currently, it is compatible with Chromium-based browsers. There are no plans to 
 
 ## Instructions
 
+### Start a Download Session (Manual)
+
 1. Open the Chrome Extension. Enter the username and toggle whether private replays are desired. Click `Start Session` to open the PS replay search menu.
 
     <img src="./images/readme/readme_1.png " width=50% height=50%>
 
-2. Select the replays to download by toggling the checkbox beside the replay. *If the checkboxes do not appear, please refresh the webpage or try searching your username again in the extension.*
+2. Select the replays to download by toggling the checkbox beside the replay. Toggle the checkbox to select / deselect all replays. *If the checkboxes do not appear, please refresh the webpage or try searching your username again in the extension.*
 
     <img src="./images/readme/readme_2.png " width=50% height=50%>
 
-    Toggle the checkbox beside the menu to select / deselect all.
-
-    <img src="./images/readme/readme_3.png " width=50% height=50%>
-
 3. Choose the export format from the dropdown menu. Click export when ready.
 4. If you enjoy the extension, please consider donating to the [Statsugiri Kofi](https://ko-fi.com/statsugiri) to support future work on Pokémon data projects.
+
+### Download All Replays (One-Click)
+
+1. Open the Chrome Extension. Enter the username and toggle whether private replays are desired. Click `Download All` to initiate a CSV download of all replays. *Please ensure you are logged in to the correct account before downloading private replays."
 
 ## FAQ
 
