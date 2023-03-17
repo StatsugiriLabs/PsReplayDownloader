@@ -30,7 +30,7 @@ Currently, it is compatible with Chromium-based browsers. There are no plans to 
 
 ### Download All Replays (One-Click)
 
-1. Open the Chrome Extension. Enter the username and toggle whether private replays are desired. Click `Download All` to initiate a CSV download of all replays. *Please ensure you are logged in to the correct account before downloading private replays."
+1. Open the Chrome Extension. Enter the username and toggle whether private replays are desired. Click `Download All` to initiate a CSV download of all replays. *Please ensure you are logged in to the correct account before downloading private replays.*
 
 ## FAQ
 
