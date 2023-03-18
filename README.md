@@ -7,34 +7,36 @@ batch downloading [Pokémon Showdown](https://pokemonshowdown.com/) replays. Cur
 
 Special thanks to [@cookiesamanda](https://twitter.com/cookiesamanda) for designing the logo.
 
-
 ## Installation
+
 You can download the extension at the Chrome Extension store: https://tinyurl.com/PsReplayDownloader
 
 Currently, it is compatible with Chromium-based browsers. There are no plans to migrate to other browsers (eg. Mozilla Firefox).
 
 ## Instructions
 
-### Start a Download Session (Manual)
-
-1. Open the Chrome Extension. Enter the username and toggle whether private replays are desired. Click `Start Session` to open the PS replay search menu.
-
-    <img src="./images/readme/readme_1.png">
-
-2. Select the replays to download by toggling the checkbox beside the replay. Toggle the checkbox to select / deselect all replays. *If the checkboxes do not appear, please refresh the webpage or try searching your username again in the extension.*
-
-    <img src="./images/readme/readme_2.png">
-
-3. Choose the export format from the dropdown menu. Click export when ready.
-4. If you enjoy the extension, please consider donating to the [Statsugiri Kofi](https://ko-fi.com/statsugiri) to support future work on Pokémon data projects.
+PS Replay Downloader can be operated in two modes: One-Click or Manual. One-Click mode is capable of downloading all replays. Manual mode can only download the 50 most recent replays, but allows users to selectively choose through the UI.
 
 ### Download All Replays (One-Click)
 
-1. Open the Chrome Extension. Enter the username and toggle whether private replays are desired. Click `Download All` to initiate a CSV download of all replays. *Please ensure you are logged in to the correct account before downloading private replays.*
+1. Open the Chrome Extension. Enter the username and toggle whether private replays are desired. Click `Download All` to initiate a CSV download of all replays. The download process may take a few seconds. _Please ensure you are logged in to the correct account before downloading private replays._
+
+### Start a Session (Manual)
+
+1. Open the Chrome Extension. Enter the username and toggle whether private replays are desired. Click `Start Session` to open the PS replay search menu.
+
+ <img src="./images/readme/readme_1.png">
+
+2. Select the replays to download by toggling the checkbox beside the replay. Toggle the checkbox to select / deselect all replays. _If the checkboxes do not appear, please refresh the webpage or try searching your username again in the extension._
+
+ <img src="./images/readme/readme_2.png">
+
+3. Choose the export format from the dropdown menu. Click export when ready.
 
 ## FAQ
 
 ### Why are the checkboxes not showing in manual session?
+
 There may be issues with how Pokémon Showdown loads DOM changes that are incongruent with the extension. Try refreshing the page or search your username again in the extension pop-up. In particular, navigating from public to private replays has known issues. It's preferred you specify whether you want private replays by toggling the "Private Replays" checkbox before searching.
 
 ### Does the Chrome Extension leverage the Pokémon Showdown Web API?
@@ -52,3 +54,7 @@ It does not. The only data stored are your replay URLs in your browser's local s
 ## Feature Requests
 
 Please tweet / message [@Statsugiri](https://twitter.com/Statsugiri) or create an issue for any feature requests.
+
+## Support
+
+If you enjoy the extension, please consider donating to the [Statsugiri Kofi](https://ko-fi.com/statsugiri) to support future work on Pokémon data projects.
